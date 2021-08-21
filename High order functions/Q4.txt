@@ -1,0 +1,4 @@
+what is the difference between map and forEach ??
+
+.map returns a new modified form array from the calling array
+,whileas .forEach returns nothing it operates on the original array compared to map which doesn't change the original array.
