@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- site title -->
+    <title>تسجيل الدخول</title>
+    <!-- import css file -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- import javascript file -->
+    <script src="js/index.js"></script>
+  </head>
+
+  <body>
+    <div class="login-main-container">
+      <div class="login-top-page">
+        <img src="/FaqraouWeb/images/logo.png" alt="logo" />
+      </div>
+      <div class="login-body">
+        <h1>تسجيل الدخول</h1>
+        <form method="post" action="https://faqraou.com/api/v1/login">
+          <div>الإيميل</div>
+          <input type="email" name="email" placeholder="email" />
+          <div>كلمة المرور</div>
+          <input type="password" name="password" placeholder="password" />
+          <input type="submit" value="التسجيل" id="login-submit-btn" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
