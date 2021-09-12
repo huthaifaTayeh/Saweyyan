@@ -202,10 +202,13 @@ footer {
   flex-basis: 140px;
   margin: 0px 20px 10px -5px;
   background-color: lightgray;
-  padding: 10px 5px 20px 5px;
+  padding: 0px 5px 0px 5px;
+  min-height: 129px;
+  max-height: 129px;
 }
 
 .joind-groups-items > img {
+  padding-top: 15px;
   width: 30px;
   display: block;
   margin-right: auto;
@@ -222,6 +225,7 @@ footer {
   font-size: 1.3vh;
   text-align: center;
   margin: 1px 0 10px 0;
+  padding: 0 10px;
   opacity: 0.3;
 }
 
