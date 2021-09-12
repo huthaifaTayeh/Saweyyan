@@ -14,18 +14,57 @@ if (currentPage === "profile.html") {
   imageContainer.querySelector("h1").innerHTML = userName;
 }
 /* 
-    Render Public Groups
+    Render Public Groups and joined groups
 */
+
 if (currentPage === "groups.html") {
-  let groupName = " اسم المجموعة";
-  let groupDescription =
-    "لوريم ايبسوم هو نموذج فتراضي يوضع في التصاميم لتعرض على العميل ليتصور";
-  let groupImgSrc = "/FaqraouWeb/images/group_icon.png";
-  let pubGroupsViews = document.getElementsByClassName("group-view-block");
-  for (let group = 0; group < pubGroupsViews.length; group++) {
-    pubGroupsViews[group].querySelector("img").src = groupImgSrc;
-    pubGroupsViews[group].querySelector("img").alt = `${groupName} icon`;
-    pubGroupsViews[group].querySelector("h5").innerHTML = groupName;
-    pubGroupsViews[group].querySelector("p").innerHTML = groupDescription;
+  console.log("hey we're here!");
+  let pubGroupsContainer = document.querySelector(".horizontal-scroll-wrapper");
+  let joinedGroupsContainer = document.querySelector(
+    ".joined-groups-container"
+  );
+  //   let pubGroupsViews = document.getElementsByClassName("group-view-block");
+  //   let joinedGroupsViews = document.getElementsByClassName("joind-groups-items");
+
+  function newPublicGroup(groupName, imgURL, groupDescription) {
+    let imgNode = document.createElement("img");
+    imgNode.src = imgURL;
+    imgNode.alt = `${groupName}-icon`;
+    let nameNode = document.createElement("h5");
+    nameNode.innerHTML = groupName;
+    let descriptionNode = document.createElement("p");
+    descriptionNode.innerHTML = groupDescription;
+    let publicGroup = document.createElement("div");
+    publicGroup.className = "group-view-block";
+    publicGroup.appendChild(imgNode);
+    publicGroup.appendChild(nameNode);
+    publicGroup.appendChild(descriptionNode);
+    pubGroupsContainer.appendChild(publicGroup);
   }
+  function newJoinedGroup(groupName, imgURL, groupDescription) {
+    let imgNode = document.createElement("img");
+    imgNode.src = imgURL;
+    imgNode.alt = `${groupName}-icon`;
+    let nameNode = document.createElement("h5");
+    nameNode.innerHTML = groupName;
+    let descriptionNode = document.createElement("p");
+    descriptionNode.innerHTML = groupDescription;
+    let publicGroup = document.createElement("div");
+    publicGroup.className = "joind-groups-items";
+    publicGroup.appendChild(imgNode);
+    publicGroup.appendChild(nameNode);
+    publicGroup.appendChild(descriptionNode);
+    joinedGroupsContainer.appendChild(publicGroup);
+  }
+
+  newPublicGroup(
+    "Testing Group",
+    "/FaqraouWeb/images/logo.png",
+    "This is a testing group"
+  );
+  newJoinedGroup(
+    "جروب للتجريب",
+    "/FaqraouWeb/images/group_icon.png",
+    "هذه المجموعة للتجربة"
+  );
 }
