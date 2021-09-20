@@ -1,0 +1,464 @@
+:root {
+  /* add your style variables here */
+  /* primary color used for button background, logo ...  */
+  --primaryColor: green;
+  --primaryColorVariant: rgb(8, 161, 8);
+  --primaryColorDark: rgb(8, 99, 8);
+  --secondaryColor: rgb(204, 153, 25);
+  --secondaryColorVariant: rgb(232, 181, 53);
+  --secondaryColorDark: rgb(146, 108, 13);
+
+  --backgroundColor: white;
+}
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+
+html {
+  padding: 0;
+  margin: 0;
+  height: 0;
+}
+body {
+  background-color: var(--backgroundColor);
+  padding: 0;
+  margin: 0;
+}
+
+button {
+  background-color: var(--primaryColor);
+  color: white;
+  border: none;
+}
+
+header {
+  margin: 7.5% 0;
+
+  padding: 0;
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  margin: 0;
+  padding: 3% 0;
+  bottom: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* ############################################################################################################### */
+/* ############################################################################################################### */
+/* ############################################################################################################### */
+/*                                              SHARED STYLING                                                     */
+
+.header-div {
+  margin: 5% 2%;
+  font-size: 6vw;
+  font-weight: 500;
+  padding: 0 0;
+}
+
+.footer-image-holder {
+  position: relative;
+  min-width: 5vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 8% 8% 5px 8%;
+}
+
+.footer-images {
+  width: 5vh;
+  margin: 5% auto 5% auto;
+}
+/* ############################################################################################################### */
+/* ############################################################################################################### */
+/* ############################################################################################################### */
+
+/*                                               Home Styling                                                       */
+.header-style {
+  margin-top: 15%;
+}
+
+.main {
+  margin: 5% 2%;
+}
+
+.main-container {
+  position: relative;
+  padding: 1%;
+  width: auto;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+  align-items: center;
+  border: 2px solid transparent;
+  border-radius: 7px;
+  box-shadow: 0px 0px 3px 1px rgba(8, 161, 8, 0.3);
+  -webkit-box-shadow: 0px 0px 3px 1px rgba(8, 161, 8, 0.3);
+  -moz-box-shadow: 0px 0px 3px 1px rgba(8, 161, 8, 0.3);
+}
+
+.main-inner-containers {
+  display: inline-flex;
+  width: auto;
+}
+/* ############################################################################################################### */
+/* ############################################################################################################### */
+/* ############################################################################################################### */
+/*                                            Gropus Styling                                                        */
+
+.header-div-groups {
+  margin: 0 1%;
+  font-size: 10vw;
+  font-weight: 600;
+  padding: 0 2%;
+}
+
+.body {
+  align-items: center;
+}
+
+.horizontal-scroll-wrapper {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  margin: 0 0 0 5px;
+  flex-direction: row-reverse;
+  /* justify-content: center; */
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.horizontal-scroll-wrapper > div {
+  width: 128px;
+  height: 128px;
+  margin-right: 5px;
+  background: lightgray;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  padding: 10px 15px 15px 15px;
+}
+
+.horizontal-scroll-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.group-view-block > h5 {
+  text-align: center;
+  width: 128px;
+  margin: 5px 0 2px 0;
+}
+.group-view-block > p {
+  font-size: 1.3vh;
+  text-align: center;
+  margin: 1px 0 10px 0;
+  opacity: 0.3;
+}
+.group-view-block > div {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+.group-view-block > img {
+  border-radius: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 45px;
+}
+
+.middle-container {
+  margin-top: 0;
+}
+.middle-container > header {
+  margin-bottom: 30px;
+  margin-top: 10px;
+  padding-right: 5.5%;
+  font-size: 5vw;
+  font-weight: 600;
+}
+
+.joined-groups-container {
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  border-radius: 10px;
+  align-items: center;
+  width: auto;
+  height: 280px;
+  overflow: scroll;
+}
+
+.joind-groups-items {
+  width: 100%;
+  border-radius: 10px;
+  flex-basis: 140px;
+  margin: 0px 20px 10px -5px;
+  background-color: lightgray;
+  padding: 0px 5px 0px 5px;
+  min-height: 129px;
+  max-height: 129px;
+}
+
+.joind-groups-items > img {
+  padding-top: 15px;
+  width: 30px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 5px;
+}
+
+.joind-groups-items > h5 {
+  text-align: center;
+  padding: 0 11px;
+  width: 128px;
+  margin: 5px 0 2px 0;
+}
+.joind-groups-items > p {
+  font-size: 1.3vh;
+  text-align: center;
+  margin: 1px 0 10px 0;
+  padding: 0 10px;
+  opacity: 0.3;
+}
+
+/* ############################################################################################################### */
+/* ############################################################################################################### */
+/* ############################################################################################################### */
+
+/*                                                  profile styling                                                 */
+
+.profile-main {
+  position: absolute;
+  border: 1px solid white;
+  border-radius: 30px;
+  height: 70%;
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  top: 16%;
+}
+
+.profile-img-container {
+  position: relative;
+  top: -13%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 0;
+  width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+.profile-img-container > div {
+  flex: 1 0 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-out-btn {
+  position: relative;
+  top: 55%;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.button_costum {
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  font-size: 2vh;
+  border: 1px solid black;
+  text-align: center;
+  opacity: 0.3;
+  padding: 3% 5%;
+  background-color: white;
+  border-radius: 50px;
+  color: black;
+  font-weight: 100;
+}
+
+.my-hr-line {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 20%;
+  background-image: url("/FaqraouWeb/images/background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* ############################################################################################################### */
+/* ############################################################################################################### */
+/* ############################################################################################################### */
+/* Media queries */
+
+/*                                                  login Styling                                                  */
+
+.login-main-container {
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-top-page {
+  height: 30%;
+  background-image: url("/FaqraouWeb/images/background.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-body {
+  position: absolute;
+  height: 60vh;
+  width: 100vw;
+  top: 28%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 0px solid white;
+  background-color: white;
+
+  border-radius: 25px;
+
+  padding: 0;
+}
+
+.login-body > form {
+  display: flex;
+  padding: 1% 10%;
+  flex-direction: column;
+}
+
+.login-body > form > div {
+  font-weight: 100;
+  margin: 3vh 5% 0.5vh 5%;
+  font-family: "Almarai", sans-serif;
+  opacity: 0.4;
+}
+
+.login-body > form > input {
+  min-height: 4vh;
+  border: 1px solid lightgray;
+  -webkit-background-clip: padding-box; /* for Safari */
+  background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+  border-radius: 7px;
+  padding-right: 7%;
+  padding-left: 7%;
+  font-family: "Almarai", sans-serif;
+}
+
+.login-body > h1 {
+  margin: 5% 10% 0 10%;
+  font-family: "Almarai", sans-serif;
+}
+
+#login-submit-btn {
+  background-color: var(--primaryColorVariant);
+  opacity: 0.98;
+  color: white;
+  min-height: 5vh;
+  border-radius: 50px;
+  position: relative;
+  top: 32vh;
+  font-family: "Almarai", sans-serif;
+}
+
+/* ############################################################################################################### */
+/* ############################################################################################################### */
+/* ############################################################################################################### */
+
+/*                                                  tags                                                                */
+#fixedbutton {
+  position: fixed;
+  background-image: url("/FaqraouWeb/images/image_button.png");
+  background-position: center;
+  background-size: cover;
+  background-color: transparent;
+  /* background-attachment: fixed; */
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  bottom: 110px;
+  right: 5px;
+}
+
+#header-title-div {
+  font-size: 10vw;
+  margin: 1% 2%;
+}
+
+#footer-image-holder-span {
+  opacity: 0.3;
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  align-items: center;
+}
+
+#footer-image-holder-span-active {
+  color: var(--secondaryColorVariant);
+  opacity: 1;
+  display: flex;
+  margin: auto;
+  flex-direction: row;
+  align-items: center;
+}
+
+#page-icon-image {
+  display: inline-flex;
+  max-width: 15%;
+  margin: 0;
+  padding: 0;
+}
+
+#title-span {
+  font-weight: bold;
+
+  padding-right: 1.5vh;
+  margin-left: 13.5vh;
+}
+
+#page-icon {
+  width: 4vh;
+}
+
+#pages-num-container {
+  align-self: center;
+  margin-right: 10vh;
+  left: 2vh;
+  font-weight: 300;
+  opacity: 0.4;
+}
+
+#header-div-title {
+  margin-right: 5%;
+  margin-top: 3%;
+  font-size: 5vw;
+  font-weight: 600;
+}
